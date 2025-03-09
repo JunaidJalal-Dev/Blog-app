@@ -1,0 +1,11 @@
+/* .active{
+    color: pink !important;
+} */
+
+#blog_data img{
+    width: 100% !important;
+}
+
+.w-full{
+    width: 100%;
+}
