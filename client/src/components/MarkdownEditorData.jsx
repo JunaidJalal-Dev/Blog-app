@@ -4,13 +4,13 @@ import MarkdownEditor from '@uiw/react-markdown-editor';
 const mdStr = `# This is a H1  \n## This is a H2  \n###### This is a H6`;
 
 
-const MarkdownEditorData = () => {
-    const [markdown, setMarkdown] = useState(mdStr);
+const MarkdownEditorData = ({setFieldValue,default_value}) => {
+    // const [markdown, setMarkdown] = useState(default_value);
   return (
     <MarkdownEditor
-    value={markdown}
+    value={default_value}
       height="200px"
-      onChange={(value, viewUpdate) => setMarkdown(value)}
+      onChange={(value, viewUpdate) => setFieldValue(value)}
   />
   )
 }
